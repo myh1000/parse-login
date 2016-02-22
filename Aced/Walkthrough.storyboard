@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="Pqh-2c-Hbe">
+            <objects>
+                <viewController storyboardIdentifier="walk0" id="Of6-fZ-U0e" customClass="BWWalkthroughViewController" customModule="Aced" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M1z-Xe-PgZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y7L-sv-6Ta"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z7v-2T-SDK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXR-zD-cx5">
+                                <rect key="frame" x="498" y="546" width="82" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUw-Er-YP9">
+                                        <rect key="frame" x="-3" y="-6" width="89" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="89" id="gfs-LK-xiY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed" destination="Of6-fZ-U0e" eventType="touchUpInside" id="ex1-YF-qbJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="dUw-Er-YP9" firstAttribute="centerX" secondItem="oXR-zD-cx5" secondAttribute="centerX" id="1bc-KG-G4I"/>
+                                    <constraint firstItem="dUw-Er-YP9" firstAttribute="centerY" secondItem="oXR-zD-cx5" secondAttribute="centerY" id="MZR-1f-NiO"/>
+                                    <constraint firstItem="dUw-Er-YP9" firstAttribute="leading" secondItem="oXR-zD-cx5" secondAttribute="leading" constant="-3" id="UX6-AV-zLi"/>
+                                    <constraint firstItem="dUw-Er-YP9" firstAttribute="top" secondItem="oXR-zD-cx5" secondAttribute="top" constant="-6" id="ohK-YZ-VaR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSe-t9-Zw8">
+                                <rect key="frame" x="20" y="546" width="107" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S54-w0-cMz">
+                                        <rect key="frame" x="3" y="-6" width="101" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="101" id="L9N-jI-dgt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpButtonPressed" destination="Of6-fZ-U0e" eventType="touchUpInside" id="iWS-Lf-B0R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="S54-w0-cMz" firstAttribute="centerY" secondItem="NSe-t9-Zw8" secondAttribute="centerY" id="LfI-TK-ii5"/>
+                                    <constraint firstItem="S54-w0-cMz" firstAttribute="leading" secondItem="NSe-t9-Zw8" secondAttribute="leading" constant="3" id="Ppw-Td-uil"/>
+                                    <constraint firstItem="S54-w0-cMz" firstAttribute="centerX" secondItem="NSe-t9-Zw8" secondAttribute="centerX" id="Xqi-TU-q0T"/>
+                                    <constraint firstItem="S54-w0-cMz" firstAttribute="top" secondItem="NSe-t9-Zw8" secondAttribute="top" constant="-6" id="ksy-It-8hc"/>
+                                </constraints>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="va0-Ij-0bI">
+                                <rect key="frame" x="281" y="544" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y7L-sv-6Ta" firstAttribute="top" secondItem="oXR-zD-cx5" secondAttribute="bottom" constant="20" id="4rV-FA-OUg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oXR-zD-cx5" secondAttribute="trailing" id="EOu-62-nAZ"/>
+                            <constraint firstItem="Y7L-sv-6Ta" firstAttribute="top" secondItem="va0-Ij-0bI" secondAttribute="bottom" constant="19" id="IcW-Em-9No"/>
+                            <constraint firstItem="Y7L-sv-6Ta" firstAttribute="top" secondItem="NSe-t9-Zw8" secondAttribute="bottom" constant="20" id="amx-3I-DeV"/>
+                            <constraint firstItem="va0-Ij-0bI" firstAttribute="centerX" secondItem="Z7v-2T-SDK" secondAttribute="centerX" id="cDg-kV-hMV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NSe-t9-Zw8" secondAttribute="leading" id="qAP-yQ-Vz2"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="loginBackground" destination="oXR-zD-cx5" id="gWx-o0-BIk"/>
+                        <outlet property="pageControl" destination="va0-Ij-0bI" id="e1q-Hq-nzu"/>
+                        <outlet property="signUpBackground" destination="NSe-t9-Zw8" id="PY8-fT-JRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFe-9v-zua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="355"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="pE2-Ge-tfO">
+            <objects>
+                <viewController storyboardIdentifier="walk1" id="lIA-lC-pK7" customClass="BWWalkthroughPageViewController" customModule="Aced" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gw1-E5-yKw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ckX-lg-pcL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d2d-AR-eIW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEU-JM-0c7">
+                                <rect key="frame" x="263" y="289" width="75" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="BKv-JM-fki"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980390000002" green="0.74509803919999995" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aEU-JM-0c7" firstAttribute="centerX" secondItem="d2d-AR-eIW" secondAttribute="centerX" id="7Fz-xL-yCA"/>
+                            <constraint firstItem="aEU-JM-0c7" firstAttribute="centerY" secondItem="d2d-AR-eIW" secondAttribute="centerY" id="vNu-hL-nLt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="McP-jh-QG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="355"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="DBM-Yv-RXC">
+            <objects>
+                <viewController storyboardIdentifier="walk2" id="CYo-q8-Nf2" customClass="BWWalkthroughPageViewController" customModule="Aced" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gnv-BP-z3L"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bpz-GH-Pvy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Z8-pz-0KA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Al7-6I-SvD">
+                                <rect key="frame" x="263" y="289" width="75" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="LL1-5P-hK8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40784313729999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Al7-6I-SvD" firstAttribute="centerX" secondItem="2Z8-pz-0KA" secondAttribute="centerX" id="7YJ-TV-CXV"/>
+                            <constraint firstItem="Al7-6I-SvD" firstAttribute="centerY" secondItem="2Z8-pz-0KA" secondAttribute="centerY" id="X40-3D-yXL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l29-yy-GFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2297" y="355"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="9oW-RX-wz8">
+            <objects>
+                <viewController storyboardIdentifier="walk3" id="YqI-1N-3Dq" customClass="BWWalkthroughPageViewController" customModule="Aced" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ILg-w1-wKd"/>
+                        <viewControllerLayoutGuide type="bottom" id="z5e-FR-HKQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8ys-zl-8aB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Three" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sum-CG-FWX">
+                                <rect key="frame" x="249" y="289" width="103" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="Sbn-cK-7wf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47058823529999999" green="0.7725490196" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sum-CG-FWX" firstAttribute="centerY" secondItem="8ys-zl-8aB" secondAttribute="centerY" id="dwa-wq-oQA"/>
+                            <constraint firstItem="sum-CG-FWX" firstAttribute="centerX" secondItem="8ys-zl-8aB" secondAttribute="centerX" id="eUL-xl-TA5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dt-AL-qfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2945" y="355"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="jCF-vM-uBW">
+            <objects>
+                <viewController storyboardIdentifier="walk4" id="2N2-0Z-eQE" customClass="BWWalkthroughPageViewController" customModule="Aced" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wlW-5b-R17"/>
+                        <viewControllerLayoutGuide type="bottom" id="acg-IN-VxV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eJh-nA-id9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automatic Animations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP0-xS-Y3A">
+                                <rect key="frame" x="195" y="214" width="211" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perform builtin animation styles automatically. Just put your subviews  into the hierarchy..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usj-Y8-ky2">
+                                <rect key="frame" x="89" y="292" width="423" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="423" id="mvG-O7-K6H"/>
+                                    <constraint firstAttribute="height" constant="85" id="oCn-ZM-gvq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Stz-kq-L0b">
+                                <rect key="frame" x="223" y="417" width="155" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="HOI-fI-vaT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32980523950000001" green="0.74408280770000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Usj-Y8-ky2" firstAttribute="centerY" secondItem="eJh-nA-id9" secondAttribute="centerY" constant="34" id="03s-cx-o4u"/>
+                            <constraint firstItem="UP0-xS-Y3A" firstAttribute="top" secondItem="wlW-5b-R17" secondAttribute="bottom" constant="194" id="Fzh-Sn-PzJ"/>
+                            <constraint firstItem="Usj-Y8-ky2" firstAttribute="centerX" secondItem="eJh-nA-id9" secondAttribute="centerX" id="gKv-Pc-es0"/>
+                            <constraint firstItem="Stz-kq-L0b" firstAttribute="bottom" secondItem="acg-IN-VxV" secondAttribute="top" id="m31-ss-AAR"/>
+                            <constraint firstAttribute="centerX" secondItem="UP0-xS-Y3A" secondAttribute="centerX" id="s7U-Bl-bdG"/>
+                            <constraint firstItem="Stz-kq-L0b" firstAttribute="centerX" secondItem="Usj-Y8-ky2" secondAttribute="centerX" id="yeX-cd-Kx8"/>
+                            <constraint firstItem="Stz-kq-L0b" firstAttribute="top" secondItem="Usj-Y8-ky2" secondAttribute="bottom" constant="40" id="zfh-LK-bB3"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
+                            <point key="value" x="0.0" y="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="InOut"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="staticTags" value="1,2"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WcM-c3-H73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3605" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iPhoneScreen.png" width="163" height="196"/>
+    </resources>
+</document>
